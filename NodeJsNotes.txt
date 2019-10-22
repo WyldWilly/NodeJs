@@ -1,0 +1,36 @@
+Node.js Notes
+
+Modules
+Express framework – Express is a minimal and flexible Node js web application framework that provides a robust set of features for the web and mobile applications. (https://expressjs.com/)
+	** To install: npm install express --save
+
+Socket.io - Socket.IO enables real-time bidirectional event-based communication. This module is good for creation of chatting based applications.
+
+Jade - Jade is a high-performance template engine and implemented with JavaScript for node and browsers.
+
+MongoDB - The MongoDB Node.js driver is the officially supported node.js driver for MongoDB.
+
+Restify - restify is a lightweight framework, similar to express for building REST APIs
+
+Bluebird - Bluebird is a fully-featured promise library with a focus on innovative features and performance.
+
+----------------------------------------
+Once a module is installed, you need to include that module into the node.js application using "require"
+	ie:
+		var express=require('express');
+		var app=express();
+		app.set('view engine','jade');
+		app.get('/',function(req,res)
+			{
+			});
+		var server=app.listen(3000,function()
+			{
+			});
+----------------------------------------
+
+A templating engine is an approach for injecting values in an application by picking up data from data files. This concept is pretty famous in Angular JS wherein the curly braces {{ key }} is used to substitutes values in the web page. The word 'key' in the curly braces basically denotes the variable which will be substituted by a value when the page is displayed.)
+
+----------------------------------------
+
+Creating Node Modules
+
