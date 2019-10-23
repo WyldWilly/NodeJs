@@ -31,6 +31,31 @@ Once a module is installed, you need to include that module into the node.js app
 A templating engine is an approach for injecting values in an application by picking up data from data files. This concept is pretty famous in Angular JS wherein the curly braces {{ key }} is used to substitutes values in the web page. The word 'key' in the curly braces basically denotes the variable which will be substituted by a value when the page is displayed.)
 
 ----------------------------------------
+MySQL https://expressjs.com/en/guide/database-integration.html#mysql
+Module: mysql
 
+Installation
+$ npm install mysql
+
+var mysql = require('mysql')
+var connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'dbuser',
+  password: 's3kreee7',
+  database: 'my_db'
+})
+
+connection.connect()
+
+connection.query('SELECT 1 + 1 AS solution', function (err, rows, fields) {
+  if (err) throw err
+
+  console.log('The solution is: ', rows[0].solution)
+})
+
+connection.end()
+
+
+----------------------------------------
 Creating Node Modules
 
